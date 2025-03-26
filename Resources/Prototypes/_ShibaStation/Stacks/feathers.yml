@@ -1,6 +1,0 @@
-- type: stack
-  id: Feather
-  name: Feather
-  icon: { sprite: _ShibaStation\Objects\Mobs\feather.rsi, state: feather }
-  spawn: MaterialFeather1
-  maxCount: 30

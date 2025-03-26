@@ -1,0 +1,85 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: FeatherScrapBase
+  name: Feather
+  description: A fuzzy little feather. These things get everywhere...
+  components:
+  - type: Sprite
+    sprite: _ShibaStation\Objects\Mobs\feather.rsi
+    scale: 0.3, 0.3
+  - type: Item
+    sprite: _ShibaStation\Objects\Mobs\feather.rsi
+    size: Small
+  - type: Tag
+    tags:
+      - RawMaterial
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: FeatherScrapBase
+  id: FeatherScrap
+  suffix: Full
+  components:
+  - type: PhysicalComposition
+    materialComposition:
+      Feather: 100
+  - type: Stack
+    stackType: Feather
+    baseLayer: base
+    layerStates:
+    - feather
+    - feather_2
+    - feather_3
+  # Goobstation - Custom stack splitting dialog
+  - type: UserInterface
+    interfaces:
+      enum.StackCustomSplitUiKey.Key:
+        type: StackCustomSplitBoundUserInterface
+  - type: Sprite
+    state: feather_3
+    layers:
+    - state: feather_3
+      map: ["base"]
+  - type: Appearance
+  - type: Item
+    heldPrefix: feather
+  - type: Extractable
+    grindableSolutionName: feather
+  - type: SolutionContainerManager
+    solutions:
+      feather:
+        reagents:
+        - ReagentId: Carbon
+          Quantity: 1
+
+- type: entity
+  parent: FeatherScrap
+  id: FeatherScrap10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: feather_2
+  - type: Stack
+    stackType: Feather
+    count: 10
+
+- type: entity
+  parent: FeatherScrap
+  id: FeatherScrap1
+  suffix: Single
+  components:
+  - type: Sprite
+    state: feather
+  - type: Stack
+    stackType: Feather
+    count: 1

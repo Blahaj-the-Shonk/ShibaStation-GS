@@ -1,7 +1,0 @@
-- type: material
-  id: Feather
-  stackEntity: FeatherScrap1
-  name: materials-feather
-  icon: { sprite: _ShibaStation\Objects\Mobs\feather.rsi, state: feather }
-  price: 0.01
-  color: "#eeeeee"

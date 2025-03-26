@@ -9,6 +9,7 @@
   <GuideEntityEmbed Entity="MobDwarf" Caption="Dwarf"/>
   <GuideEntityEmbed Entity="MobGingerbread" Caption="Gingerbread"/>
     <GuideEntityEmbed Entity="MobHarpy" Caption="Harpy"/>
+    <GuideEntityEmbed Entity="MobFelinid" Caption="Felinid"/>
   </Box>
   <Box>
   <GuideEntityEmbed Entity="MobHuman" Caption="Human"/>
@@ -23,7 +24,7 @@
   <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
   <GuideEntityEmbed Entity="MobTajaran" Caption="Tajaran"/>
   <GuideEntityEmbed Entity="MobVox" Caption="Vox"/>
-  <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vuplkanin"/>
+  <GuideEntityEmbed Entity="MobVulpkanin" Caption="Vulpkanin"/>
   <GuideEntityEmbed Entity="MobYowie" Caption="Yowie"/>
   </Box>
 

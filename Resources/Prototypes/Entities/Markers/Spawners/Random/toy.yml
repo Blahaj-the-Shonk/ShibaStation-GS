@@ -30,10 +30,20 @@
         - PlushieSharkBlue
         - PlushieSharkPink
         - PlushieSharkGrey
+        # ShibaStation Plushies Start
+        - PlushieMiccau
+        - PlushieDeroh
+        - PlushieCass
+        - PlushieAchto
+        - PlushieLucy
+        - PlushieDave
+        - PlushieAkuji
+        # ShibaStation Plushies End
         - ToyAmongPequeno
         - ToyMouse
         - PlushieDiona
         - PlushieArachind
+        - PlushieBingle # Goobstation
       chance: 0.5
       offset: 0.2
 
@@ -101,7 +111,7 @@
       - ToyFigurineLawyer
       - ToyFigurineCargoTech
       - ToyFigurineSalvage
-      - ToyFigurineQuartermaster   
+      - ToyFigurineQuartermaster
       - ToyFigurineChiefEngineer
       - ToyFigurineAtmosTech
       - ToyFigurineEngineer
